@@ -34,14 +34,14 @@ class Song
     @@genres.each do |genre|
       @@genre_count[genre] ? @@genre_count[genre] += 1 : @@genre_count[genre] = 1
     end
-    return @@genre_count
+    @@genre_count
   end
   
   def self.artist_count
     @@artists.each do |artist|
       @@artist_count[artist] ? @@artist_count[artist] += 1 : @@artist_count[artist] = 1
     end
-    return @@artist_count
+    @@artist_count
   end
   
 end
